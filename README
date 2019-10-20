@@ -1,0 +1,23 @@
+README for Config
+=================
+
+Config gather all custom configs used to set up Unix environment, GIT, prompt, etc...
+
+Content:
+========
+
+- custom_prompt (Custom Unix prompt)
+- gitconfig (Custom GIT configuration)
+
+Installation:
+=============
+
+Put "custom_prompt" in home directory and add following lines to bashrc:
+
+# Custom prompt
+if [ -f ~/.custom_prompt ]; then
+    . ~/.custom_prompt
+fi
+
+Put "gitconfig" in home directory and complete [user] block
+

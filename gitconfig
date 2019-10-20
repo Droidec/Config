@@ -1,0 +1,32 @@
+[user]
+  # Add "email" and "name" variables here
+
+[color]
+  diff        = auto
+  status      = auto
+  branch      = auto
+  interactive = auto
+  ui          = true
+  pager       = true
+
+[push]
+  default = current
+
+[pull]
+  rebase = true
+
+[alias] 
+  ci  = commit
+  co  = checkout
+  st  = status
+  br  = branch
+  lo  = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  lg  = log --all --graph --pretty=tformat:'%Cred%h - %d%Creset %s %Cgreen(%an %ad)%Creset' --max-count=30
+  lgl = log --all --graph --pretty=tformat:'%Cred%h - %d%Creset %s %Cgreen(%an %ad)%Creset'
+  lga = log --all --graph --decorate --date-order
+
+[core]
+  editor = vim
+
+[credential]
+  helper = cache --timeout 3600
