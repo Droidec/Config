@@ -69,7 +69,7 @@ function prompt_func() {
     then
         PS1="${prompt}> "
     else
-        PS1="${prompt}${LIGHT_BLUE}>${RESET_ALL} "
+        PS1="${prompt}${RED}>${RESET_ALL} "
     fi
 }
 
