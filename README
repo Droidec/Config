@@ -3,14 +3,14 @@ README for Config
 
 Config gather all custom configs used to set up Unix environment, GIT, prompt, etc...
 
-Content:
-========
+Project content:
+================
 
 - custom_prompt (Custom Unix prompt)
 - gitconfig (Custom GIT configuration)
 
-Installation:
-=============
+Usage:
+======
 
 Put "custom_prompt" in home directory and add following lines to bashrc:
 
@@ -21,3 +21,7 @@ fi
 
 Put "gitconfig" in home directory and complete [user] block
 
+Author(s):
+==========
+
+Droidec (Marc G.) - Lead developer on Linux system
