@@ -6,22 +6,34 @@ Config gather all custom configs used to set up Unix environment, GIT, prompt, e
 Project content:
 ================
 
-- custom_prompt (Custom Unix prompt)
-- gitconfig (Custom GIT configuration)
+### bash_prompt ###
 
-Usage:
-======
+Custom bash prompt that handle GIT branches
 
-Put "custom_prompt" in home directory and add following lines to bashrc:
+Installation:
+- Copy bash_prompt file content in ~/.bash_prompt
+- Add the following lines to ~/.bashrc
 
-# Custom prompt
-if [ -f ~/.custom_prompt ]; then
-    . ~/.custom_prompt
+if [ -f ~/.bash_prompt ]; then
+    . ~/.bash_prompt
 fi
 
-Put "gitconfig" in home directory and complete [user] block
+### gitconfig ###
+
+Custom GIT configuration that declares useful aliases ans command shortcuts
+
+Installation:
+- Copy gitconfig file content in ~/.gitconfig
+- Complete [user] block
+
+### zshrc ###
+
+Custom zsh prompt thant handle GIT branches and useful aliases
+
+Installation:
+- Copy zshrc file content in ~/.zshrc
 
 Author(s):
 ==========
 
-Droidec (Marc G.) - Lead developer on Linux system
+Droidec (Marc G.) - Lead developer on Unix system
