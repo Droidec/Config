@@ -20,7 +20,7 @@ fi
 
 ### gitconfig ###
 
-Custom GIT configuration that declares useful aliases ans command shortcuts
+Custom GIT configuration that declares useful aliases and command shortcuts
 
 Installation:
 - Copy gitconfig file content in ~/.gitconfig
