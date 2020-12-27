@@ -1,13 +1,28 @@
 # Load version control information
+autoload -U colors && colors
 autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git
 precmd() { vcs_info }
 
 # Format the vcs_info_msg_0_ variable
-zstyle ':vcs_info:git:*' formats ' (%b)'
+zstyle ':vcs_info:git:*' formats ' %F{red}(%b%f%F{yellow}%m%u%c%f%F{red})%f'
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' unstagedstr '!'
+zstyle ':vcs_info:git:*' stagedstr '↑'
+zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
+
++vi-git-untracked() {
+  if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
+     git status --porcelain | grep -m 1 '^??' &>/dev/null
+  then
+    # Modify %m
+    hook_com[misc]='*'
+  fi
+}
 
 # Custom prompt
-setopt PROMPT_SUBST
-PROMPT='%F{green}(%n)%f[%F{blue}%c%f%F{red}${vcs_info_msg_0_}%f]> '
+setopt prompt_subst
+PROMPT='%F{green}(%n)%f[%F{blue}%c%f${vcs_info_msg_0_}]> '
 
 # Custom aliases
 alias ll="ls -lG"
