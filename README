@@ -28,7 +28,7 @@ Installation:
 
 ### zshrc ###
 
-Custom zsh prompt thant handle GIT branches and useful aliases
+Custom zsh prompt that handle GIT branches and useful aliases
 
 Installation:
 - Copy zshrc file content in ~/.zshrc
@@ -38,8 +38,8 @@ Author(s):
 
 Droidec (Marc G.) - Lead developer on Unix system
 
-Credits and licence
-===================
+Licence:
+========
 
 Config is released under WTFPL clause licence. See the LICENCE file in this
 source distribution for more information
