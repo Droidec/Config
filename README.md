@@ -35,8 +35,9 @@ Installation:
 
 ## Author
 
-Marc GIANNETTI <mgtti.pro@gmail.com>
+Marc GIANNETTI \<mgtti.pro@gmail.com\>
 
 ## Licence
 
-`Config` is released under BSD-3 clause licence. See the LICENCE file in this source distribution for more information.
+`Config` is released under the WTFPL licence.  
+See the LICENCE file in this source distribution for more information.
