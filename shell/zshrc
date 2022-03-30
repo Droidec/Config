@@ -27,3 +27,6 @@ PROMPT='%F{green}(%n)%f[%F{blue}%c%f${vcs_info_msg_0_}]> '
 # Custom aliases
 alias ll="ls -lG"
 alias lla="ls -laG"
+
+# Homebrew
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
