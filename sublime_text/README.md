@@ -9,4 +9,3 @@ Recommended packages:
 - GitGutter
 - Package Control
 - Theme - Monokai Pro
-- Theme - Soda
